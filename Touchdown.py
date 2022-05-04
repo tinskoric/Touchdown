@@ -1,7 +1,7 @@
 # Tin Skoric
 # CS 021
 
-# Final Project: Touchdown
+# Touchdown
 # You can only move forwards and backwards (including diagonally). You can't move sideways!
 
 def clear():
@@ -265,7 +265,6 @@ def gamestate_cpu(current_turn):
     time_count = time_stop - time_start
     time_condition = time_condition - time_count
     end_condition()
-
     # The part at the bottom with a bunch of exceptions works like this:
     # The computer player will find a list of open places to move and will then refine them according to the position that was selected from the earlier strategy.
     # If the computer doesn't find any suitable options according to slightly broader conditions. Finally, if the computer still cannot do this, a new, completely
@@ -343,7 +342,6 @@ def gameboard():
 # time in minutes that they wish to play. This amount can be entered as a decimal float and will be converted to standard
 # format when displayed during the game. Example: time_condition = 3.5 becomes "3 minutes 30 seconds." If a numeric value 
 # is not entered correctly the user will be prompted to reenter.
-
 def main():
     global time_condition, gameloop
     loop = 1
