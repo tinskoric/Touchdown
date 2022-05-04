@@ -258,7 +258,7 @@ def gamestate_cpu(current_turn):
             cpu_random_move = random.choice(cpu_open_options)
     cpu_move_place = value_index[cpu_random_move]
 
-    time.sleep(random.randint(0,0))
+    time.sleep(random.randint(2,4))
     values[value_index.index(cpu_move_place)] = current_turn
     values[value_index.index(cpu_move_select)] = "+"
     time_stop = time.time()
